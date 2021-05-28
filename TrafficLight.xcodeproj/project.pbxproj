@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55357E0703C5D8590A338BC3 /* Pods_TrafficLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D989528401D4C728405BB4 /* Pods_TrafficLight.framework */; };
 		EDCC661D265FD2D0004D7087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC661C265FD2D0004D7087 /* AppDelegate.swift */; };
 		EDCC661F265FD2D0004D7087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC661E265FD2D0004D7087 /* SceneDelegate.swift */; };
 		EDCC6621265FD2D0004D7087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC6620265FD2D0004D7087 /* ViewController.swift */; };
 		EDCC6624265FD2D0004D7087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCC6622265FD2D0004D7087 /* Main.storyboard */; };
 		EDCC6626265FD2D2004D7087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCC6625265FD2D2004D7087 /* Assets.xcassets */; };
 		EDCC6629265FD2D2004D7087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCC6627265FD2D2004D7087 /* LaunchScreen.storyboard */; };
+		EDCC6632265FD387004D7087 /* Appearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCC6631265FD387004D7087 /* Appearence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E04C266F0221A0F9A5C7B78 /* Pods-TrafficLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficLight.debug.xcconfig"; path = "Target Support Files/Pods-TrafficLight/Pods-TrafficLight.debug.xcconfig"; sourceTree = "<group>"; };
+		81D989528401D4C728405BB4 /* Pods_TrafficLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrafficLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A2E5DC6513C556F91F064F /* Pods-TrafficLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrafficLight.release.xcconfig"; path = "Target Support Files/Pods-TrafficLight/Pods-TrafficLight.release.xcconfig"; sourceTree = "<group>"; };
 		EDCC6619265FD2D0004D7087 /* TrafficLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCC661C265FD2D0004D7087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDCC661E265FD2D0004D7087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		EDCC6625265FD2D2004D7087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDCC6628265FD2D2004D7087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDCC662A265FD2D2004D7087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDCC6631265FD387004D7087 /* Appearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55357E0703C5D8590A338BC3 /* Pods_TrafficLight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7249362E3153D516657918CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E04C266F0221A0F9A5C7B78 /* Pods-TrafficLight.debug.xcconfig */,
+				E7A2E5DC6513C556F91F064F /* Pods-TrafficLight.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74FB9EF46CDE7E269AC1FFBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81D989528401D4C728405BB4 /* Pods_TrafficLight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDCC6610265FD2D0004D7087 = {
 			isa = PBXGroup;
 			children = (
 				EDCC661B265FD2D0004D7087 /* TrafficLight */,
 				EDCC661A265FD2D0004D7087 /* Products */,
+				7249362E3153D516657918CF /* Pods */,
+				74FB9EF46CDE7E269AC1FFBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,48 @@
 		EDCC661B265FD2D0004D7087 /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
-				EDCC661C265FD2D0004D7087 /* AppDelegate.swift */,
-				EDCC661E265FD2D0004D7087 /* SceneDelegate.swift */,
-				EDCC6620265FD2D0004D7087 /* ViewController.swift */,
-				EDCC6622265FD2D0004D7087 /* Main.storyboard */,
-				EDCC6625265FD2D2004D7087 /* Assets.xcassets */,
-				EDCC6627265FD2D2004D7087 /* LaunchScreen.storyboard */,
-				EDCC662A265FD2D2004D7087 /* Info.plist */,
+				EDCC66352660DD42004D7087 /* Supporting Files */,
+				EDCC6630265FD372004D7087 /* Extension */,
+				EDCC66362660DDB3004D7087 /* Modules */,
+				EDCC66372660DDCB004D7087 /* Assets */,
 			);
 			path = TrafficLight;
+			sourceTree = "<group>";
+		};
+		EDCC6630265FD372004D7087 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EDCC6631265FD387004D7087 /* Appearence.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EDCC66352660DD42004D7087 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDCC661C265FD2D0004D7087 /* AppDelegate.swift */,
+				EDCC661E265FD2D0004D7087 /* SceneDelegate.swift */,
+				EDCC662A265FD2D2004D7087 /* Info.plist */,
+				EDCC6627265FD2D2004D7087 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDCC66362660DDB3004D7087 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EDCC6620265FD2D0004D7087 /* ViewController.swift */,
+				EDCC6622265FD2D0004D7087 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EDCC66372660DDCB004D7087 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EDCC6625265FD2D2004D7087 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDCC662D265FD2D2004D7087 /* Build configuration list for PBXNativeTarget "TrafficLight" */;
 			buildPhases = (
+				C6DDE2E52026C399CA75D44C /* [CP] Check Pods Manifest.lock */,
 				EDCC6615265FD2D0004D7087 /* Sources */,
 				EDCC6616265FD2D0004D7087 /* Frameworks */,
 				EDCC6617265FD2D0004D7087 /* Resources */,
+				B4621595A0B5B815F682D2A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +193,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B4621595A0B5B815F682D2A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficLight/Pods-TrafficLight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrafficLight/Pods-TrafficLight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrafficLight/Pods-TrafficLight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DDE2E52026C399CA75D44C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrafficLight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDCC6615265FD2D0004D7087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +243,7 @@
 				EDCC6621265FD2D0004D7087 /* ViewController.swift in Sources */,
 				EDCC661D265FD2D0004D7087 /* AppDelegate.swift in Sources */,
 				EDCC661F265FD2D0004D7087 /* SceneDelegate.swift in Sources */,
+				EDCC6632265FD387004D7087 /* Appearence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +387,7 @@
 		};
 		EDCC662E265FD2D2004D7087 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E04C266F0221A0F9A5C7B78 /* Pods-TrafficLight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +407,7 @@
 		};
 		EDCC662F265FD2D2004D7087 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7A2E5DC6513C556F91F064F /* Pods-TrafficLight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
